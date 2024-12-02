@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Fixies logo recreated using HTML, CSS, and SVG.">
+    <title>The Fixies Logo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The Fixies Logo</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="team-members.html">Team Members</a>
+            <a href="hour-of-code.html">Hour of Code</a>
+            <a href="web-project.html">Website Project</a>
+            <a href="code-artist.html">Code Art</a>
+        </nav>
+    </header>
+    <main>
+        <section class="logo-section">
+            <svg
+                width="300"
+                height="300"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 300 300"
+            >
+                <!-- Outer Circle -->
+                <circle
+                    cx="150"
+                    cy="150"
+                    r="140"
+                    stroke="#2e8b91"
+                    stroke-width="4"
+                    fill="none"
+                ></circle>
+
+                <!-- Inner Dashes -->
+                <g stroke="#a0d66f" stroke-width="3">
+                    <line x1="150" y1="20" x2="150" y2="40" />
+                    <line x1="150" y1="260" x2="150" y2="280" />
+                    <line x1="20" y1="150" x2="40" y2="150" />
+                    <line x1="260" y1="150" x2="280" y2="150" />
+                </g>
+
+                <!-- Small Yellow Lines -->
+                <g stroke="#e0e05f" stroke-width="2">
+                    <line x1="110" y1="35" x2="120" y2="50" />
+                    <line x1="190" y1="35" x2="180" y2="50" />
+                    <line x1="110" y1="265" x2="120" y2="250" />
+                    <line x1="190" y1="265" x2="180" y2="250" />
+                </g>
+
+                <!-- Central Graphic -->
+                <g stroke="#2e8b91" stroke-width="6">
+                    <line x1="120" y1="150" x2="180" y2="150" />
+                    <circle cx="120" cy="150" r="10" fill="#2e8b91" />
+                    <circle cx="180" cy="150" r="10" fill="#2e8b91" />
+                </g>
+
+                <!-- Banner -->
+                <rect
+                    x="60"
+                    y="130"
+                    width="180"
+                    height="40"
+                    fill="#2e8b91"
+                ></rect>
+                <text
+                    x="150"
+                    y="155"
+                    font-family="Arial, sans-serif"
+                    font-size="24"
+                    fill="white"
+                    text-anchor="middle"
+                >
+                    The Fixies
+                </text>
+            </svg>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 The Fixies. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our team's projects, events, and code art.">
+    <title>Team Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function greeting() {
+            var d = new Date();
+            var time = d.getHours();
+            var message = "";
+
+            if (time <= 12 && time > 7) {
+                message = "Good morning, user!";
+            } else if (time >= 17 && time < 23) {
+                message = "Good evening, user!";
+            } else if (time > 12 && time < 17) {
+                message = "Good afternoon, user!";
+            } else {
+                message = "Good night, user!";
+            }
+
+            // Insert the message into the greeting div
+            document.getElementById("greeting-section").innerHTML = `<b>${message}</b>`;
+        }
+    </script>
+</head>
+<body onload="greeting()">
+    <header style="display: flex; align-items: center; justify-content: space-between;">
+        <!-- ADA logo -->
+        <img src="media/ada_logo_white.png" alt="ADA University Logo" style="height: 60px; margin-right: 20px;">
+        
+        <h1 style="flex: 1; text-align: center;">Welcome to Our Team Website</h1>
+        
+        <nav>
+            <a href="team-members.html">Team Members</a>
+            <a href="hour-of-code.html">Hour of Code</a>
+            <a href="web-project.html">Website Project</a>
+            <a href="code-artist.html">Code Art</a>
+        </nav>
+    </header>
+
+    <!-- Greeting section -->
+    <div id="greeting-section" style="text-align: center; font-size: 1.2em; margin: 10px 0; color: #333;"></div>
+
+    <main>
+        <section>
+            <h2>About Our Team</h2>
+            <p>
+                Welcome to our team’s website! We are a group of passionate coders and creators who are excited to 
+                share our journey, projects, and creativity with the world. Explore our activities, achievements, 
+                and innovative projects.
+            </p>
+            <!-- Updated team banner -->
+            <img src="media/fixies.jpeg" alt="Team Banner" style="width: 100%; max-height: 600px;">
+        </section>
+
+        <section>
+            <h2>What You’ll Find Here</h2>
+            <ul>
+                <li>Learn more about our team members and their roles.</li>
+                <li>Discover our Hour of Code event and how we celebrated coding.</li>
+                <li>Check out our website project and individual Codecademy profiles.</li>
+                <li>Explore the fascinating world of code art!</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Team Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
